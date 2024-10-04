@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no"
+    />
+
+    <!-- Apple-specific meta tags -->
+    <meta name="apple-mobile-web-app-title" content="My Music App" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="icon" href="./images/music-logo.png" type="image/x-icon" />
+
+    <meta name="description" content="A music app to store song list" />
+    <meta
+      name="keywords"
+      content="Music, Song, Song list, Listen to Music, Music App, Playlist, mp3"
+    />
+
+    <title>My Music App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <div class="container-float">
+      <div class="heading">
+        <img src="./images/music-logo.png" alt="logo" />
+        <h1>My Music App</h1>
+      </div>
+      <div class="sub-heading">
+        <h4>NEW SONG</h4>
+      </div>
+      <form class="form-main">
+        <div class="form-control">
+          <label>Title:</label>
+          <input id="titleInput" type="text" required />
+        </div>
+        <label id="titleWarning" class="warning-text hidden">Required!</label>
+        <div class="form-control">
+          <label>Artist:</label>
+          <input id="artistInput" type="text" required />
+        </div>
+        <label id="artistWarning" class="warning-text hidden">Required!</label>
+        <div class="form-submit-btn">
+          <button type="button" id="btnAdd" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+      <div class="sub-heading">
+        <h4>LIST OF SONG</h4>
+      </div>
+      <div class="song-list">
+        <ul id="song-list-ul">
+          <li>
+            <div><b>Falling into you</b></div>
+            <div>Celine Dion</div>
+          </li>
+          <li>
+            <div><b>Crazy</b></div>
+            <div>Aerosmith</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
