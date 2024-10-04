@@ -4,6 +4,10 @@ const ASSETS = [
   "/index.html",
   "/css/styles.css",
   "/images/music-logo.png",
+  "/images/music-icon_192x192.png",
+  "/images/music-icon_512x512.png",
+  "/images/screenshot-narrow.png",
+  "/images/screenshot-wide.png",
   "/js/main.js",
 ];
 
